@@ -1,0 +1,115 @@
+funcion factorial(n){
+    Si (n == 0){
+        Retornar 1
+    }
+    Sino {
+        Retornar (n * factorial(n-1))
+    }
+}
+
+
+funcion primeros100primos(){
+    primos = []
+    num = 2
+    Mientras (primos.tam() << 100){
+        esprimo = Verdadero
+        divisor = 2
+        Mientras (divisor <= entero(Raiz(num))){
+            Si ((num % divisor) == 0){
+                esprimo = Falso
+            }
+            divisor = divisor +1
+        }
+        Si (esprimo == Verdadero){
+            primos.agregar(num)
+        }
+        num = num + 1
+    }
+    Retornar primos
+}
+primos100 = primeros100primos()
+
+Para (j=0; j<=13; j = j+1){
+imprimir("El factorial del numero primo es: ", factorial(primos100[j]))
+}
+
+
+matrizA = [[]]
+Para (a = 0; a<=50; a = a+1){
+Para(a1 = 0; a1 <= 50; a1 = a1+1){
+columna = matrizA[a]
+columna.agregar(a1)
+}
+matrizA.agregar([])
+}
+matrizA.borrar([])
+
+matrizB = [[]]
+Para (b = 0; b<=50; b = b+1){
+Para(b1 = 0; b1 <= 50; b1 = b1+1){
+columnab = matrizB[b]
+columnab.agregar(b1+10)
+}
+matrizB.agregar([])
+}
+matrizB.borrar([])
+
+matriz1 = arreglo(matrizA)
+matriz2 = arreglo(matrizB)
+imprimir()
+imprimir(matriz1)
+imprimir()
+imprimir(matriz2)
+imprimir()
+imprimir("suma de matrices: ", matriz1 + matriz2)
+imprimir("resta de matrices: ", matriz1 - matriz2)
+imprimir("multiplicacion de matrices: ", matriz1 * matriz2)
+imprimir("prodPunto de matrices: ", Punto(matriz1,matriz2))
+
+funcion in (palabrac, llave){
+Para (j=0; j <= llave.tam(); j= j+1){
+Si(palabrac == llave[j]){
+Retornar Verdadero
+}
+}
+Retornar Falso
+}
+count = []
+Para (i = 1; i <= 100; i = i+1){
+count.agregar(i)
+}
+imprimir(primos100)
+graficar barras (count, primos100, "numeros primos",25)
+
+abrir(quijote, "quijote.txt")
+todo = leerTodo( quijote)
+texto = todo.separar()
+imprimir(texto)
+imprimir(texto.tam())
+vocabulario = {}
+Para (i=0; i <= (texto.tam()-1); i = i +1){
+palabra = texto[i]
+imprimir(palabra)
+Si (vocabulario.tam() == 0){
+vocabulario[palabra] = 1
+imprimir("llego aca")
+}
+Sino{
+keys = vocabulario.llaves()
+imprimir(keys)
+asd = in(palabra, keys)
+Si( asd == Verdadero){
+z = vocabulario[palabra]
+vocabulario[palabra] = z +1
+}
+Sino{
+vocabulario[palabra] = 1
+}
+}
+}
+imprimir(vocabulario)
+
+
+
+
+

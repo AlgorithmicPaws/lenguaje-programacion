@@ -1,0 +1,152 @@
+imprimir(193)
+imprimir(entero(2.2))
+a = 8
+b = 6
+imprimir(a+b*2)
+(1+2)*3
+cos(180)
+imprimir(sen(180))
+tan(80)
+5/2
+2/0
+|0-10|
+imprimir(0xA + 0x1)
+10%3
+5//2
+3^2
+9^(1/2)
+Raiz(9)
+imprimir(Raiz(8, 3))
+3+2 == a
+!(3+2 == a)
+t = Verdadero
+imprimir(! t)
+string = "hola" + " mundo"
+
+imprimir(!t | 3+2 == a)
+Si (3+2 == a){
+imprimir("xd")
+imprimir(string)
+} 
+Sino {
+s = 0
+Mientras (s << 5){
+imprimir(s)
+s = s + 1
+}
+Para (n = 5; n <= 10; n = n +1){
+imprimir(n)
+}
+imprimir("funciona else")
+}
+funcion suma(l, c){
+num = l + c /*probando comentarios
+
+Retornar num^2
+}
+c = suma(2, 2)
+imprimir("c")
+imprimir(c)
+lista = [2, 3]
+listados = [5, 6]
+imprimir(lista+listados)
+
+imprimir((3+5i)+(2-3j))
+imprimir(3.2+2.3)
+imprimir(2--3)
+
+/*hola
+abrir(archivo, "datos.txt")
+
+
+escribir(archivo, "Hola, mundo")
+escribir(archivo, "funcionan los archivos")
+
+linea = leerLinea(archivo, 1)
+
+escribir(archivo, "Hola, mundo 2")
+Para (n = 5; n <= 10; n = n +1){
+escribir(archivo, "Hola, mundo 2")
+}
+Para (l = 2; l <= 7; l = l +1){
+lineas34 = leerLinea(archivo, l)
+imprimir("la linea: ", l, ", es: ", lineas34)
+}
+imprimir(linea)
+
+
+borrar(archivo)
+cerrar(archivo)
+
+imprimir("Probando recursividad: ")
+
+funcion factorial(n){
+    Si (n == 0){
+        Retornar 1
+    }
+    Sino {
+        Retornar (n * factorial(n-1))
+    }
+}
+resultado = factorial(4)
+imprimir(resultado)
+
+diccionario = {"xd": ["nose", "hola"], 2: "dos", 3: "tres"}
+imprimir(diccionario["xd"])
+
+imprimir(diccionario) 
+imprimir()
+imprimir("matrices: ")
+matriz = [[1,2,3],[4,5,6],[7,8,9]]
+imprimir(matriz[1][1])
+matriz[1][1] = 10
+imprimir(matriz)
+imprimir(matriz[1])
+imprimir("tamano: ", matriz.tam())
+
+imprimir()
+imprimir("arreglos: ")
+arr1 = arreglo(lista)
+arr2 = arreglo(listados)
+arr3 = arr1 * arr2
+imprimir("probar arreglos numpy: ", arr3, " 1er arreglo: ", arr1, " 2do arreglo: ", arr2)
+
+imprimir("Producto punto: ")
+vector1 = arreglo([1, 2, 3])
+vector2 = arreglo([4, 5, 6])
+prodPunto = Punto(vector1, vector2)
+imprimir("el producto punto es: ", prodPunto)
+imprimir()
+prodCruz = Cruz(vector1, vector2)
+imprimir("el producto cruz es: ", prodCruz)
+imprimir()
+imprimir("Inversa: ")
+matriz[1][1] = 5
+imprimir(matriz)
+reverse = Inversa(matriz)
+imprimir("la inversa es: ", reverse)
+transpose = Transpuesta(matriz)
+imprimir("la transpuesta es: ", transpose)
+imprimir()
+imprimir("dataFrames: ")
+data = {"Nombre": ["Juan", "Maria", "Pedro"], "Edad": [30, 25, 40], "Estado Civil": ["Soltero", "Casada", "Divorciado"]}
+
+df = mc(data)
+
+imprimir(df)
+imprimir(df.filtrar(df.columna("Edad") >> 25))
+imprimir()
+
+imprimir("graficar: ")
+edades = df.columna("Edad")
+nombres = df.columna("Nombre")
+
+graficar barras (nombres , edades)
+
+/* arreglar graficas que reciban listas
+
+
+
+
+
+
